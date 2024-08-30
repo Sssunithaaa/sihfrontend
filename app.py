@@ -4,13 +4,22 @@ from streamlit_option_menu import option_menu
 if 'page' not in st.session_state:
     st.session_state.page = "home"
 
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+            background-color: "fff000";
+            
+}
+</style>
+"""
+st.markdown(page_bg_img,unsafe_allow_html=True)
 
 # with st.sidebar:
 if st.session_state.page != "result":  # Skip menu logic if on result page
     selected = option_menu(
         menu_title=None,
-        options=["Upload", "About", "Team"],
-        icons=["Upload", "About", "Team"],
+        options=["Home","Upload", "About", "Team"],
+        icons=["Home","Upload", "About", "Team"],
         orientation="horizontal"
     )
 
@@ -21,6 +30,8 @@ if st.session_state.page != "result":  # Skip menu logic if on result page
         st.session_state.page = "about"
     elif selected == "Team":
         st.session_state.page = "team"
+    elif selected=="Home":
+        st.session_state.page = "home"
     else:
         st.session_state.page = "home"
 print(st.session_state.page)
@@ -107,11 +118,14 @@ def show_hero_section():
         }}
         .hero-text {{
             text-align: center;
-            padding-top: 200px;
+            padding-top: 100px;
             color: white;
             font-size: 1.5em;
             max-width: 600px;
             margin: 0 auto;
+        }}
+        .hero-text h1 {{
+          color:red;
         }}
         .hero-button {{
             display: inline-block;
@@ -160,9 +174,7 @@ def show_hero_section():
         <div class="hero-text">
             <h1>PROJECT SIH</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <div class="hero-button">
-                <a href="#" class="button">Get Started</a>
-            </div>
+          
         </div>
         </div>
         """,
