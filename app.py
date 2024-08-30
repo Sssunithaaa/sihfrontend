@@ -94,13 +94,13 @@ def show_result_page():
     )
 
     # Resample button
-    if st.markdown(
-        """
-        <button style='text-align: center;' class="resample-button">Resample</button>
-        """,
-        unsafe_allow_html=True
-    ):
-        st.write("Resample button clicked")
+    # if st.markdown(
+    #     """
+    #     <button style='text-align: center;' class="resample-button">Resample</button>
+    #     """,
+    #     unsafe_allow_html=True
+    # ):
+    #     st.write("Resample button clicked")
 
 # Set the page configuration to wide mode
 # st.set_page_config(layout="wide")
@@ -183,7 +183,7 @@ def show_hero_section():
 
 # Function to display the upload page
 def show_upload_page():
-    st.title("Upload Page")
+    st.title("Upload")
 
     uploaded_files = st.file_uploader(
         "Drag & drop files or Browse",
