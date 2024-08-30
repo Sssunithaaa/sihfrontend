@@ -38,7 +38,7 @@ print(st.session_state.page)
 
 def show_result_page():
     # Page title
-    st.markdown("<h1 style='text-align: center; color: red;'>Result</h1>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; color: red;'>Keyword detected</h3>", unsafe_allow_html=True)
 
 
     # Adding custom CSS for styling
@@ -81,7 +81,7 @@ def show_result_page():
     # Fetching data from the backend
     # For demonstration, we'll use a static string.
     # Replace this with actual data fetching logic.
-    keyword_detected = "This is the text fetched from the backend."
+    keyword_detected = "Keyword"
 
     # Display the fetched text in a styled box
     st.markdown(
@@ -93,14 +93,12 @@ def show_result_page():
         unsafe_allow_html=True
     )
 
-    # Resample button
-    # if st.markdown(
-    #     """
-    #     <button style='text-align: center;' class="resample-button">Resample</button>
-    #     """,
-    #     unsafe_allow_html=True
-    # ):
-    #     st.write("Resample button clicked")
+    st.markdown(
+        """
+        <button style='text-align: center;' class="resample-button">Resample</button>
+        """,
+        unsafe_allow_html=True
+    )
 
 # Set the page configuration to wide mode
 # st.set_page_config(layout="wide")
