@@ -201,7 +201,7 @@ def show_upload_page():
 
     language = st.selectbox(
         "Select Language",
-        options=["English", "Spanish", "French", "German", "Chinese"]
+        options=["English","Kannada","Hindi","Bangla","Tamil","Telugu", "Spanish", "French", "German", "Chinese"]
     )
 
     if st.button("SUBMIT"):
