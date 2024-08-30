@@ -21,6 +21,8 @@ if st.session_state.page != "result":  # Skip menu logic if on result page
         st.session_state.page = "about"
     elif selected == "Team":
         st.session_state.page = "team"
+    else:
+        st.session_state.page = "home"
 print(st.session_state.page)
 
 def show_result_page():
