@@ -119,7 +119,7 @@ def show_hero_section():
         .hero-text {{
             text-align: center;
             padding-top: 100px;
-            color: white;
+            
             font-size: 1.5em;
             max-width: 600px;
             margin: 0 auto;
