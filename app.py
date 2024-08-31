@@ -170,7 +170,7 @@ def show_hero_section():
         """
         <div>
         <div class="hero-text">
-            <h1>FluffyPeanuts SIH 2024</h1>
+            <h1 style='color: purple'>FluffyPeanuts SIH 2024</h1>
             <h4>Problem Statement ID - 1680</h4>  
             <h3>Problem Statement Title - Few Shot Language Agnositic Key Word Spotting system (FSLAKWS) for audio files</h3>
             <h5>Organization - National Technical Research Organization (NTRO) </h5>
@@ -214,6 +214,41 @@ def show_upload_page():
         # st.success("Form submitted successfully!")
         
 
+# def show_team_page():
+#     st.title("Meet the Team")
+    
+#     # Example team members data
+#     team_members = [
+#         {
+#             "name": "Alice Smith",
+#             "role": "Project Manager",
+#             "bio": "Alice has over 10 years of experience in managing tech projects and ensuring timely delivery.",
+#             "image_url": "https://example.com/alice.jpg"
+#         },
+#         {
+#             "name": "Bob Johnson",
+#             "role": "Lead Developer",
+#             "bio": "Bob is a full-stack developer with expertise in Python and JavaScript.",
+#             "image_url": "https://example.com/bob.jpg"
+#         },
+#         {
+#             "name": "Charlie Davis",
+#             "role": "UX/UI Designer",
+#             "bio": "Charlie specializes in creating user-friendly interfaces and experiences.",
+#             "image_url": "https://example.com/charlie.jpg"
+#         }
+#     ]
+
+#     # Display each team member
+#     for member in team_members:
+#         # st.image(member["image_url"], width=150)
+#         st.subheader(member["name"])
+#         st.write(f"**Role:** {member['role']}")
+#         st.write(member["bio"])
+#         st.markdown("---")
+
+# Example usage in your Streamlit app
+
 
 # Initialize session state for navigation
 if "page" not in st.session_state:
@@ -227,7 +262,8 @@ elif st.session_state.page == "upload":
 elif st.session_state.page == "about":
     st.write("About Page - Content goes here")
 elif st.session_state.page == "team":
-    st.write("Team Page - Content goes here")
+    # show_team_page()
+    st.write("Team Page- Content goes here")
 elif st.session_state.page == "result":
     show_result_page()
 # Update session state when a navbar button is clicked
