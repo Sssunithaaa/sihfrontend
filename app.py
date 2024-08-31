@@ -116,7 +116,7 @@ def show_hero_section():
         }}
         .hero-text {{
             text-align: center;
-            padding-top: 100px;
+            padding-top: 30px;
             
             font-size: 1.5em;
             max-width: 600px;
@@ -170,9 +170,12 @@ def show_hero_section():
         """
         <div>
         <div class="hero-text">
-            <h1>PROJECT SIH</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          
+            <h1>FluffyPeanuts SIH 2024</h1>
+            <h4>Problem Statement ID - 1680</h4>  
+            <h3>Problem Statement Title - Few Shot Language Agnositic Key Word Spotting system (FSLAKWS) for audio files</h3>
+            <h5>Organization - National Technical Research Organization (NTRO) </h5>
+            <p style='color: red;'>*Click on the upload tab to upload your audio file</p>
+
         </div>
         </div>
         """,
